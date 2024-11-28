@@ -223,6 +223,8 @@ class _RegisterState extends State<Register> {
 
   @override
   Widget build(BuildContext context) {
+    final double widthScreen = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       
@@ -234,7 +236,7 @@ class _RegisterState extends State<Register> {
       
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(33.0),
+          padding:widthScreen>600? EdgeInsets.symmetric(horizontal:widthScreen/4.0):const EdgeInsets.all(33.0),
           child: SingleChildScrollView(
             child: Form(
               key: _formKey,
