@@ -7,6 +7,7 @@ import 'package:flutter_project/screens/home.dart';
 import 'package:flutter_project/screens/profile.dart';
 import 'package:flutter_project/screens/search.dart';
 import 'package:flutter_project/shared/colors.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MobileScreen extends StatefulWidget {
   const MobileScreen({super.key});
@@ -28,9 +29,7 @@ int currentPage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('mobile screen'),
-      ),
+    
       //   bottomNavigationBar:
       // BottomNavigationBar(items: [
       //   BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
@@ -80,8 +79,9 @@ int currentPage = 0;
           ]),
       
       body: PageView(
-        // onPageChanged: (index){
-        //  print("index is $index");},
+        
+        onPageChanged: (djaja){
+         print("djaja is $djaja");},
               // physics: NeverScrollableScrollPhysics(),
               controller: _pageController,
               children: [
@@ -91,7 +91,7 @@ int currentPage = 0;
                 Center(child: Text("love u ")),
                 Profile(),
               ],
-
+      
       ),
       
   
