@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_project/responsive/mobile.dart';
 import 'package:flutter_project/responsive/responsive.dart';
 import 'package:flutter_project/responsive/web.dart';
+import 'package:flutter_project/screens/register.dart';
+import 'package:flutter_project/screens/sign_in.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // theme: ThemeData.light(useMaterial3: true),
       theme: ThemeData.dark(),
-      home:
-          Responsive(myMobileScreen: MobileScreen(), myWebScreen: WebScreen()),
+      home:Login()
+          // Responsive(myMobileScreen: MobileScreen(), myWebScreen: WebScreen()),
     );
   }
 }
