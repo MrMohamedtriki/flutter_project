@@ -1,4 +1,7 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:flutter_project/shared/colors.dart';
 
 class Search extends StatefulWidget {
   const Search({super.key});
@@ -12,8 +15,12 @@ class _SearchState extends State<Search> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: Text("search screen"),
+        backgroundColor: mobileBackgroundColor,
+        title: TextFormField(
+          decoration: InputDecoration(labelText: "Search for a user"),
+        ),
       ),
+      backgroundColor: mobileBackgroundColor,
     );
   }
 }

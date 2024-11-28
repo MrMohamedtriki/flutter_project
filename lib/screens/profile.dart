@@ -13,6 +13,8 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
+    final double widthScreen = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: mobileBackgroundColor,
@@ -91,7 +93,7 @@ class _ProfileState extends State<Profile> {
           ),
           Divider(
             color: Colors.white,
-            thickness: 0.08,
+            thickness: widthScreen > 600 ? 0.08 : 0.44,
           ),
           SizedBox(
             height: 10,
@@ -107,6 +109,9 @@ class _ProfileState extends State<Profile> {
                 ),
                 icon: Icon(Icons.edit, color: Colors.grey),
                 style: ButtonStyle(
+                  padding: WidgetStatePropertyAll(
+                    EdgeInsets.symmetric(vertical: widthScreen>600?20:10,horizontal: 33)
+                  ),
                     backgroundColor: WidgetStateProperty.all(
                         const Color.fromARGB(0, 25, 171, 171)),
                     shape: WidgetStateProperty.all(RoundedRectangleBorder(
@@ -125,6 +130,9 @@ class _ProfileState extends State<Profile> {
                 ),
                 icon: Icon(Icons.logout, color: Colors.grey),
                 style: ButtonStyle(
+                    padding: WidgetStatePropertyAll(
+                    EdgeInsets.symmetric(vertical: widthScreen>600?20:10,horizontal: 33)
+                  ),
                     backgroundColor: WidgetStateProperty.all(
                         const Color.fromARGB(255, 182, 21, 21)),
                     shape: WidgetStateProperty.all(RoundedRectangleBorder(
@@ -137,29 +145,36 @@ class _ProfileState extends State<Profile> {
           SizedBox(
             height: 10,
           ),
-          Divider(),
+          Divider(
+            color: Colors.white,
+            thickness: widthScreen > 600 ? 0.08 : 0.44,
+          ),
           SizedBox(
             height: 10,
           ),
           Expanded(
-            child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2, //zouz 3l mi7war el x
-                  childAspectRatio: 3 / 2,
-                  crossAxisSpacing:
-                      10, //el masafa el farga binathom eli 3la ajnab
-                  mainAxisSpacing:
-                      33, //el masafa el farga binathom ama men lowta wo fo9 binattthom
-                ),
-                itemCount: 3,
-                itemBuilder: (BuildContext context, int index) {
-                  return ClipRRect(
-                    borderRadius: BorderRadius.circular(5),
-                    child: Image.network(
-                      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/5f/d9/53.jpg",
-                    ),
-                  );
-                }),
+            child: Padding(
+
+              padding: widthScreen>600?   const EdgeInsets.all(55.0):const EdgeInsets.all(3.0),
+              child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2, //zouz 3l mi7war el x
+                    childAspectRatio: 3 / 2,
+                    crossAxisSpacing:
+                        10, //el masafa el farga binathom eli 3la ajnab
+                    mainAxisSpacing:
+                        33, //el masafa el farga binathom ama men lowta wo fo9 binattthom
+                  ),
+                  itemCount: 3,
+                  itemBuilder: (BuildContext context, int index) {
+                    return ClipRRect(
+                      borderRadius: BorderRadius.circular(5),
+                      child: Image.network(
+                        "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/5f/d9/53.jpg",
+                      ),
+                    );
+                  }),
+            ),
           ),
         ],
       ),
