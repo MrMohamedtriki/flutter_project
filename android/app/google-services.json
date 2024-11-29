@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "362434696100",
+    "project_id": "flowsnap-1e47e",
+    "storage_bucket": "flowsnap-1e47e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362434696100:android:40711e2d85a5b10ac0e731",
+        "android_client_info": {
+          "package_name": "com.FlowSnap.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXU2LErCo8T0a9fge0I3xW2ZoZUkN_e_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
