@@ -1,0 +1,5 @@
+to begin with firebase authentification first of all do this!
+npm install -g firebase-tools
+
+bch tn7i el error eli ijiw fi firebase_options.dart b3d masn3o el comande npm install...
+tktib heda:flutter pub add firebase_core
