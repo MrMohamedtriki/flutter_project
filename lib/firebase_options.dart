@@ -52,7 +52,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBXU2LErCo8T0a9fge0I3xW2ZoZUkN_e_k',
-    appId: '1:362434696100:android:40711e2d85a5b10ac0e731',
+    appId: '1:362434696100:android:13b9cc404924a852c0e731',
     messagingSenderId: '362434696100',
     projectId: 'flowsnap-1e47e',
     storageBucket: 'flowsnap-1e47e.firebasestorage.app',
@@ -64,6 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '362434696100',
     projectId: 'flowsnap-1e47e',
     storageBucket: 'flowsnap-1e47e.firebasestorage.app',
+    iosClientId: '362434696100-e2nsulau92hbrp84fhhhgk1vrvrems3s.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterProject',
   );
 
@@ -73,6 +74,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '362434696100',
     projectId: 'flowsnap-1e47e',
     storageBucket: 'flowsnap-1e47e.firebasestorage.app',
+    iosClientId: '362434696100-e2nsulau92hbrp84fhhhgk1vrvrems3s.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterProject',
   );
 
@@ -85,4 +87,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'flowsnap-1e47e.firebasestorage.app',
     measurementId: 'G-1CGNS2X804',
   );
+
 }

@@ -1,8 +1,6 @@
 // ignore_for_file: avoid_types_as_parameter_names, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:flutter_project/responsive/mobile.dart';
-import 'package:flutter_project/responsive/web.dart';
 
 class Responsive extends StatefulWidget {
   final myMobileScreen;

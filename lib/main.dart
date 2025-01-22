@@ -2,11 +2,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project/firebase_options.dart';
+import 'package:flutter_project/pages/login/login.dart';
 import 'package:flutter_project/responsive/mobile.dart';
 import 'package:flutter_project/responsive/responsive.dart';
 import 'package:flutter_project/responsive/web.dart';
 import 'package:flutter_project/screens/register.dart';
-import 'package:flutter_project/screens/sign_in.dart';
+// import 'package:flutter_project/screens/sign_in.dart';
 
  void main() async { 
     WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +31,7 @@ import 'package:flutter_project/screens/sign_in.dart';
 
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData.light(useMaterial3: true),
       theme: ThemeData.dark(),
       home:Login()
+      // Login()
           // Responsive(myMobileScreen: MobileScreen(), myWebScreen: WebScreen()),
     );
   }

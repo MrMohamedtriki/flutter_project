@@ -7,7 +7,6 @@ import 'package:flutter_project/screens/home.dart';
 import 'package:flutter_project/screens/profile.dart';
 import 'package:flutter_project/screens/search.dart';
 import 'package:flutter_project/shared/colors.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class MobileScreen extends StatefulWidget {
   const MobileScreen({super.key});

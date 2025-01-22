@@ -5,7 +5,6 @@ import 'package:flutter_project/screens/register.dart';
 import 'package:flutter_project/shared/colors.dart';
 import 'package:flutter_project/shared/contants.dart';
 
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -195,4 +194,5 @@ class _LoginState extends State<Login> {
           ),
         )));
   }
+  
 }
